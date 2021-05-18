@@ -1,0 +1,35 @@
+{# templates/base.html.twig #}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Bienvenue !{% endblock %}</title>
+
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+        <!-- Va générer une balise link pour charger le code CSS app.css dans /assets de Webpack Encore -->
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+        <!-- Va générer des balises script pour charger le code JavaScript app.js dans /assets de Webpack Encore -->
+    {% endblock %}
+</head>
+<body>
+{% block body %}
+    <div id="sidebar">
+        {% block sidebar %}
+            <ul style="border: solid">
+                <li><a href="{{ path('home') }}"> Accueil </a></li>
+                <li><a href="{{ path('searchFish') }}">4. Rechercher des poissons (consultez FishController::displayComponent)</a></li>
+            </ul>
+        {% endblock %}
+    </div>
+
+    <div id="content" style="border: solid">
+        1 : Consultez le controller <strong>FishController</strong>, méthode home
+        {% block content %}{% endblock %}
+    </div>
+{% endblock %}
+</body>
+</html>
