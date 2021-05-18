@@ -8,7 +8,7 @@ Installez le projet : `composer install && npm install`
 Lancez le projet serveur : `symfony server:start`
 Lancez le projet front dans une autre console, sans éteindre le serveur `npm run watch`
 
-## Installation 
+## Installer React sur votre projet Symfony
 
 Depuis le dossier racine de votre projet 
 
