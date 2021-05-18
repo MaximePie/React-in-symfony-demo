@@ -1,3 +1,6 @@
+Le code a été créé grâce au cours de [La Paresselle](https://www.notion.so/lapasserelle/Le-on-Symfony-React-64e40fb361ce43dc99b0f8af6aa2c10a), 
+
+
 ## Pour lancer le projet rapidement : 
 
 Téléchargez le projet : `git clone https://github.com/MaximePie/formation-react-api.git && cd symfony-reacto`
